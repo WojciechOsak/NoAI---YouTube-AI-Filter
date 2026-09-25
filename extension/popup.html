@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoAI — YouTube AI Filter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="brand-mark"><span>AI</span></div>
+      <div class="brand-copy">
+        <h1>NoAI — YouTube AI Filter</h1>
+        <p>Filter AI-disclosed videos and music.</p>
+      </div>
+      <label class="switch" aria-label="Enable filtering">
+        <input id="enabled" type="checkbox">
+        <span class="switch-track"></span>
+      </label>
+    </header>
+
+    <section class="status-card">
+      <div>
+        <span class="eyebrow">FILTER STATUS</span>
+        <strong id="filterState">Active</strong>
+      </div>
+      <span class="live-dot" aria-hidden="true"></span>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <span>When AI is detected</span>
+      </div>
+      <div class="segmented" id="mode" role="radiogroup" aria-label="Filter mode">
+        <button type="button" data-mode="hide">Hide</button>
+        <button type="button" data-mode="blur">Blur</button>
+        <button type="button" data-mode="label">Label</button>
+      </div>
+    </section>
+
+    <section class="stats">
+      <article>
+        <span class="stat-number" id="checked">0</span>
+        <span class="stat-label">videos checked</span>
+      </article>
+      <article>
+        <span class="stat-number" id="ai">0</span>
+        <span class="stat-label">AI filtered</span>
+      </article>
+    </section>
+
+    <button id="clear" class="secondary" type="button">
+      <span>Clear detection cache</span>
+      <span class="chevron">↻</span>
+    </button>
+
+    <a class="secondary coffee" href="https://buymeacoffee.com/osakwojcie1" target="_blank" rel="noopener noreferrer">
+      <span>☕ Buy me a coffee</span>
+      <span class="chevron" aria-hidden="true">↗</span>
+    </a>
+
+    <p id="status" class="status" aria-live="polite"></p>
+    <p class="note">Runs locally. Detection uses YouTube's own AI/synthetic-content disclosures. Unlabelled AI may still appear.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

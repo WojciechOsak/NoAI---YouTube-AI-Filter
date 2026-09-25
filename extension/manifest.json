@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "NoAI — YouTube AI Filter",
+  "description": "Filters YouTube and YouTube Music items that YouTube discloses as AI or synthetic content.",
+  "version": "0.2.2",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://music.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://music.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "NoAI — YouTube AI Filter",
+    "default_popup": "popup.html"
+  }
+}
