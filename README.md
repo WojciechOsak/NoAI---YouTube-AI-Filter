@@ -4,6 +4,8 @@ Public privacy-policy website for the NoAI browser extension.
 
 **Privacy policy:** https://wojciechosak.github.io/NoAI---YouTube-AI-Filter/
 
+[☕ Buy me a coffee](https://buymeacoffee.com/osakwojcie1)
+
 ## Website
 
 Static HTML and CSS, with no JavaScript, analytics, external fonts, or build dependencies. GitHub Pages publishes the root of the `main` branch.

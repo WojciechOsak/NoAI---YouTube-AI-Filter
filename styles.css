@@ -9,11 +9,14 @@ a:focus-visible{outline:3px solid var(--accent);outline-offset:6px;border-radius
 .shell{width:min(1120px,calc(100% - 96px));margin:auto}
 .skip-link{position:absolute;top:12px;left:12px;transform:translateY(-160%);background:var(--ink);color:white;padding:14px;z-index:5}
 .skip-link:focus{transform:none}
-.site-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:30px 0;border-bottom:1px solid var(--line)}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:30px 0;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-size:25px;font-weight:780;letter-spacing:-1px;line-height:1.1}
 .brand-detail{display:block;font-size:10px;font-weight:500;letter-spacing:.25px;margin-top:5px;color:var(--muted)}
+.header-links{display:flex;align-items:center;justify-content:flex-end;gap:16px;flex-wrap:wrap}
 .repository-link{font-size:13px;text-decoration:none;font-weight:550}
 .repository-link span{margin-left:12px}
+.coffee-link{border:1px solid var(--line);border-radius:6px;padding:10px 12px;text-decoration:none;font-size:12px;font-weight:600;white-space:nowrap}
+.coffee-link:hover{border-color:var(--accent)}
 .hero{padding:79px 0 46px;max-width:850px}
 .eyebrow{font-size:10px;font-weight:700;letter-spacing:1.8px;line-height:1.6}
 .hero .eyebrow{display:flex;align-items:center;gap:9px;color:var(--green);margin:0 0 26px}
